@@ -3,7 +3,6 @@ sig02 = imread('SIG_02.png');
 sig03 = imread('SIG_03.png');
 
 
-imag_array = [sig01 sig02];
 
 
 %Inicijalna slika

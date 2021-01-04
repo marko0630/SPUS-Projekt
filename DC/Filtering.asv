@@ -1,12 +1,15 @@
-%Image filtering testing ground 
+imageFolder = 'C:\Users\Dino\Desktop\SPUS-Projekt';
 
-sig01 = imread("SIG_01.png");
-figure
-imshow(sig01);
+imgArray = loadImages(imageFolder);
 
-size(sig03)
+img_resized = imageResize(imgArray, 300, 500);
 
-sig04 = imresize(sig03, [350, 500]);
+img_equal = imageHistEqual(img_resized);
 
-figure
-imshow(sig04)
+img_gray = rgb2grayscale(img_resized);
+
+img_gray_equal = imageHistEqual(img_gray);
+
+
+img_sharp = unsharpMask(img_gray)
+
