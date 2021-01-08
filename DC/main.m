@@ -8,13 +8,13 @@ imagePrepared = prepareImages(imageFolder);
 %counting, etc...
 imageEnhanced = enhanceImage(imagePrepared);
 
-%GMM and Kmeans function; Shows segmented images and saves them as .jpg in same location as original images
-GMM               
-Kmeans
 
 %Saving images to disk in same location as original images
 saveImages(imageEnhanced);
 
 
+%GMM and Kmeans function; Shows segmented images and saves them as .jpg in same location as original images
+GMM               
+Kmeans
 
 
